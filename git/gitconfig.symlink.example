@@ -4,12 +4,14 @@
 [hub]
         protocol = https
 [user]
-        name = AUTHORNAME
-        email = AUTHOREMAIL
+        name = Fred Mercy
+        email = yo@fredmercy.com
 [credential]
         helper = GIT_CREDENTIAL_HELPER
 [alias]
         co = checkout
+        cam = commit -a -m
+        cA = commit --amend -m
         promote = !$ZSH/bin/git-promote
         wtf     = !$ZSH/bin/git-wtf
         rank-contributors = !$ZSH/bin/git-rank-contributors

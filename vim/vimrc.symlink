@@ -66,6 +66,9 @@ nmap <C-tab> <C-w>w<cr>
 " Takes split pane into new tab
 nmap <tab>t <C-W>T<cr>
 
+" Avoid syntax to slow your vim down with long lines
+set synmaxcol=256
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugin Related Stuff
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

@@ -91,6 +91,12 @@ alias iavm="cd ~/Sites/iavm/"
 alias stin="cd ~/Sites/stingray/"
 alias stintheme="cd ~/Sites/stingray/sites/all/themes/stingray/"
 
+alias cmcc="cd ~/Sites/cmcc/"
+alias cmcctheme="cd ~/Sites/cmcc/wp-content/themes/the-harbinson-collection/"
+
+alias raymond="cd ~/Sites/raymondchabot/"
+alias raymondtheme="cd ~/Sites/raymondchabot/wp-content/themes/raymondchabot/"
+
 alias ll="l -al"
 alias hg="history | grep"
 alias pwdc="pwd | pbcopy"

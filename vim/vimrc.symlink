@@ -6,28 +6,40 @@ call vundle#rc()
 
 " let Vundle manage Vundle, required
 Bundle 'gmarik/vundle'
-Bundle 'scrooloose/nerdtree'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-sleuth'
-Bundle 'cakebaker/scss-syntax.vim'
 Bundle 'Shougo/vimproc.vim'
-Bundle 'Shougo/unite.vim'
-Bundle 'bling/vim-airline'
-Bundle 'sjl/gundo.vim'
-Bundle 'editorconfig/editorconfig-vim'
-Bundle 'tpope/vim-markdown'
-Bundle 'suan/vim-instant-markdown'
-Bundle 'ervandew/supertab'
-Bundle 'jelera/vim-javascript-syntax'
-Bundle 'Yggdroot/indentLine'
-Bundle "MarcWeber/vim-addon-mw-utils"
 Bundle "tomtom/tlib_vim"
+
+" Must-have UI stuff
+Bundle 'scrooloose/nerdtree'
+Bundle 'bling/vim-airline'
+
+" Tools
+Bundle 'Shougo/unite.vim'
+Bundle 'tpope/vim-fugitive' " Git Plugin
+Bundle 'tpope/vim-surround' " Commands to wrap text in tags, quotes, etc.
+Bundle 'sjl/gundo.vim'
+Bundle 'ervandew/supertab'
+Bundle 'Yggdroot/indentLine'
 Bundle "garbas/vim-snipmate"
 Bundle "honza/vim-snippets"
+
+" Syntax highlighters and helpers:
+Bundle 'jelera/vim-javascript-syntax'
+Bundle 'cakebaker/scss-syntax.vim'
+Bundle 'tpope/vim-markdown'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'digitaltoad/vim-jade'
+Bundle 'suan/vim-instant-markdown'
+Bundle "MarcWeber/vim-addon-mw-utils"
+Bundle 'editorconfig/editorconfig-vim'
+
+" Clojure related:
+Bundle 'tpope/vim-fireplace'
+Bundle 'tpope/vim-sexp-mappings-for-regular-people'
+
+" Unused (?):
+" Bundle 'scrooloose/nerdcommenter'
+" Bundle 'tpope/vim-sleuth' " Detects indentation
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General

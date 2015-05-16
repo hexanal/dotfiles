@@ -15,8 +15,8 @@ Bundle 'bling/vim-airline'
 
 " Tools
 Bundle 'Shougo/unite.vim'
-Bundle 'tpope/vim-fugitive' " Git Plugin
-Bundle 'tpope/vim-surround' " Commands to wrap text in tags, quotes, etc.
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-surround'
 Bundle 'sjl/gundo.vim'
 Bundle 'ervandew/supertab'
 Bundle 'Yggdroot/indentLine'
@@ -40,7 +40,6 @@ Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-fireplace'
 
 " Unused (?):
-" Bundle 'scrooloose/nerdcommenter'
 " Bundle 'tpope/vim-sleuth' " Detects indentation
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -102,6 +101,8 @@ call unite#filters#matcher_default#use(['ag'])
 let g:unite_source_file_rec_max_cache_files = 0
 call unite#custom#source('file_mru,file_rec,file_rec/async,grepocate',
         \ 'max_candidates', 0)
+let g:unite_source_rec_async_command =
+        \ 'ag --follow --nocolor --nogroup --hidden -g ""'
 
 " Powerline Fonts for Airline
 let g:airline_powerline_fonts = 1

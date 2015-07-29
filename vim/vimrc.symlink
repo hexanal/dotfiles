@@ -17,6 +17,7 @@ Bundle 'bling/vim-airline'
 Bundle 'Shougo/unite.vim'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-repeat'
 Bundle 'sjl/gundo.vim'
 Bundle 'ervandew/supertab'
 Bundle 'Yggdroot/indentLine'
@@ -26,20 +27,26 @@ Bundle "honza/vim-snippets"
 " Syntax highlighters and helpers:
 Bundle 'jelera/vim-javascript-syntax'
 Bundle 'cakebaker/scss-syntax.vim'
-Bundle 'tpope/vim-markdown'
+Bundle 'hail2u/vim-css3-syntax'
+Bundle 'wavded/vim-stylus'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'digitaltoad/vim-jade'
-Bundle 'suan/vim-instant-markdown'
-Bundle "MarcWeber/vim-addon-mw-utils"
-Bundle 'editorconfig/editorconfig-vim'
+Bundle 'MarcWeber/vim-addon-mw-utils'
+Bundle 'plasticboy/vim-markdown'
+Bundle 'shime/vim-livedown'
+Bundle 'mxw/vim-jsx'
 
 " Clojure related:
-Bundle 'tpope/vim-sexp-mappings-for-regular-people'
+" Bundle 'tpope/vim-salve'
+" Bundle 'tpope/vim-fireplace'
 Bundle 'guns/vim-sexp'
-Bundle 'tpope/vim-repeat'
-Bundle 'tpope/vim-fireplace'
+Bundle 'tpope/vim-sexp-mappings-for-regular-people'
+Bundle 'guns/vim-clojure-static'
+Bundle 'guns/vim-clojure-highlight'
+Bundle 'kien/rainbow_parentheses.vim'
 
 " Unused (?):
+" Bundle 'vim-scripts/paredit.vim'
 " Bundle 'tpope/vim-sleuth' " Detects indentation
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -59,7 +66,8 @@ let g:mapleader = ","
 
 if has('gui_running')
   " set guifont=Droid\ Sans\ Mono\ for\ Powerline:h12
-  set guifont=Ubuntu\ Mono\ derivative\ Powerline:h14
+  " set guifont=Ubuntu\ Mono\ derivative\ Powerline:h14
+  set guifont=Source\ Code\ Pro\ for\ Powerline:h13
 endif
 
 " Show hidden characters
@@ -110,9 +118,38 @@ let g:airline_powerline_fonts = 1
 " Pull up Gundo Interface
 nmap <leader>gg :GundoToggle<cr>
 
-" Markdown INSTANT... not so much!
-let g:instant_markdown_slow = 1
-let g:instant_markdown_autostart = 0
+" Disable Folding for Markdown files
+let g:vim_markdown_folding_disabled=1
+
+" Allow JSX in normal JS files
+let g:jsx_ext_required = 0
+
+"""""""""""
+" CLOJURE "
+"""""""""""
+let g:rbpt_colorpairs = [
+    \ ['brown',       'RoyalBlue3'],
+    \ ['Darkblue',    'SeaGreen3'],
+    \ ['darkgray',    'DarkOrchid3'],
+    \ ['darkgreen',   'firebrick3'],
+    \ ['darkcyan',    'RoyalBlue3'],
+    \ ['darkred',     'SeaGreen3'],
+    \ ['darkmagenta', 'DarkOrchid3'],
+    \ ['brown',       'firebrick3'],
+    \ ['gray',        'RoyalBlue3'],
+    \ ['black',       'SeaGreen3'],
+    \ ['darkmagenta', 'DarkOrchid3'],
+    \ ['Darkblue',    'firebrick3'],
+    \ ['darkgreen',   'RoyalBlue3'],
+    \ ['darkcyan',    'SeaGreen3'],
+    \ ['darkred',     'DarkOrchid3'],
+    \ ['red',         'firebrick3'],
+    \ ]
+
+let g:rbpt_max = 16
+let g:rbpt_loadcmd_toggle = 0
+
+map <leader>R :RainbowParenthesesToggle<cr>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
@@ -173,14 +210,15 @@ set tm=500
 syntax enable
 
 " COLORS!
-colorscheme gruvbox
+" colorscheme gruvbox
+colorscheme base16-eighties
 set background=dark
+set t_Co=256
 
 " Set extra options when running in GUI mode
 if has("gui_running")
     set guioptions-=T
     set guioptions+=e
-    set t_Co=256
     set guitablabel=%M\ %t
 endif
 

@@ -107,6 +107,9 @@ alias ppu="python proc update"
 alias glom="gl origin master"
 alias glss="gp stage stage"
 
+# VIM Shortcuts
+alias editvimrc="mvim ~/.dotfiles/vim/vimrc.symlink"
+
 # Drupal Drush Aliases
 alias d="drush"
 alias dca="drush cc all"

@@ -80,36 +80,20 @@ export PATH=/usr/local/:/usr/local/rvm/gems/ruby-2.1.0/bin:/usr/local/rvm/gems/r
 
 # CUSTOM ALIASES
 alias back="cd -1"
-alias gti="echo 'vroom vroom';git"
-alias logs="cd /var/log/apache2"
-alias edithosts="sudo -H vim /etc/hosts"
-
-alias prot="cd ~/Sites/protectron/"
-alias gotheme="cd sites/all/themes/tp1/"
-alias iavm="cd ~/Sites/iavm/"
-
-alias stin="cd ~/Sites/stingray/"
-alias stintheme="cd ~/Sites/stingray/sites/all/themes/stingray/"
-
-alias cmcc="cd ~/Sites/cmcc/"
-alias cmcctheme="cd ~/Sites/cmcc/wp-content/themes/the-harbinson-collection/"
-
-alias raymond="cd ~/Sites/raymondchabot/"
-alias raymondtheme="cd ~/Sites/raymondchabot/wp-content/themes/raymondchabot/"
-
 alias ll="l -al"
 alias hg="history | grep"
 alias pwdc="pwd | pbcopy"
-
-alias ppu="python proc update"
-
-# GIT Shortcuts
-alias glom="gl origin master"
-alias glss="gp stage stage"
-
-# VIM Shortcuts
+alias gti="echo 'vroom vroom';git"
+alias logs="cd /var/log/apache2"
+alias edithosts="sudo -H vim /etc/hosts"
 alias editvimrc="mvim ~/.dotfiles/vim/vimrc.symlink"
+
+alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
+alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
 
 # Drupal Drush Aliases
 alias d="drush"
 alias dca="drush cc all"
+alias ppu="python proc update"
+alias prot="cd ~/Sites/protectron/"
+alias gotheme="cd sites/all/themes/tp1/"

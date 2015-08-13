@@ -1,5 +1,7 @@
 # Source nvm
-. ~/.nvm/nvm.sh
+source ~/.nvm/nvm.sh
+# Enable Github Token for Homebrew
+export HOMEBREW_GITHUB_API_TOKEN=a57302509988bd5e3316d00abe769dba7a33d550
 
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh

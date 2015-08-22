@@ -1,5 +1,5 @@
-# Source nvm
 source ~/.nvm/nvm.sh
+source ~/.dotfiles/zsh/k.sh
 # Enable Github Token for Homebrew
 export HOMEBREW_GITHUB_API_TOKEN=a57302509988bd5e3316d00abe769dba7a33d550
 

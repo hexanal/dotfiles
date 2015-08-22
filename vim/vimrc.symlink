@@ -21,11 +21,14 @@ Bundle 'tpope/vim-repeat'
 Bundle 'sjl/gundo.vim'
 Bundle 'ervandew/supertab'
 Bundle 'Yggdroot/indentLine'
-Bundle "garbas/vim-snipmate"
-Bundle "honza/vim-snippets"
+Bundle 'garbas/vim-snipmate'
+Bundle 'honza/vim-snippets'
+Bundle 'mattn/gist-vim'
+" thoughtbot/vim-rspec
 
 " Syntax highlighters and helpers:
 Bundle 'jelera/vim-javascript-syntax'
+Bundle 'othree/javascript-libraries-syntax.vim'
 Bundle 'cakebaker/scss-syntax.vim'
 Bundle 'hail2u/vim-css3-syntax'
 Bundle 'wavded/vim-stylus'
@@ -34,7 +37,7 @@ Bundle 'digitaltoad/vim-jade'
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'plasticboy/vim-markdown'
 Bundle 'shime/vim-livedown'
-Bundle 'mxw/vim-jsx'
+" Bundle 'mxw/vim-jsx'
 
 " Clojure related:
 " Bundle 'tpope/vim-salve'
@@ -95,6 +98,7 @@ set synmaxcol=256
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Set shortcut for NERD Tree
 map <leader>n :NERDTreeToggle<CR>
+map <Leader>f :NERDTreeFind<CR>
 
 " Open .vimrc file
 nmap <leader>v :tabe ~/.vim/vimrc<cr>
@@ -166,6 +170,9 @@ set ruler
 
 set nu
 set relativenumber
+
+" Don't allow selection of text using mouse
+set mouse=a
 
 " Height of the command bar
 set cmdheight=1

@@ -4,8 +4,7 @@ call vundle#rc()
 "let path = '~/some/path/here'
 "call vundle#rc(path)
 
-" let Vundle manage Vundle, required
-Bundle 'gmarik/vundle'
+Bundle 'VundleVim/Vundle.vim'
 Bundle 'Shougo/vimproc.vim'
 Bundle "tomtom/tlib_vim"
 
@@ -27,8 +26,8 @@ Bundle 'mattn/gist-vim'
 " thoughtbot/vim-rspec
 
 " Syntax highlighters and helpers:
-Bundle 'jelera/vim-javascript-syntax'
 Bundle 'othree/javascript-libraries-syntax.vim'
+" Bundle 'jelera/vim-javascript-syntax'
 Bundle 'cakebaker/scss-syntax.vim'
 Bundle 'hail2u/vim-css3-syntax'
 Bundle 'wavded/vim-stylus'
@@ -101,7 +100,7 @@ map <leader>n :NERDTreeToggle<CR>
 map <Leader>f :NERDTreeFind<CR>
 
 " Open .vimrc file
-nmap <leader>v :tabe ~/.vim/vimrc<cr>
+nmap <leader>v :tabe ~/.vimrc<cr>
 
 " Updates/Source this file
 map <silent> <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo '[.vimrc reloaded]'"<CR>

@@ -4,52 +4,56 @@ call vundle#rc()
 "let path = '~/some/path/here'
 "call vundle#rc(path)
 
-Bundle 'VundleVim/Vundle.vim'
-Bundle 'Shougo/vimproc.vim'
-Bundle "tomtom/tlib_vim"
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'Shougo/vimproc.vim'
+" Plugin 'tomtom/tlib_vim'
+Plugin 'vim-scripts/tlib'
 
 " Must-have UI stuff
-Bundle 'scrooloose/nerdtree'
-Bundle 'bling/vim-airline'
+Plugin 'scrooloose/nerdtree'
+Plugin 'bling/vim-airline'
+Plugin 'yosiat/oceanic-next-vim'
 
 " Tools
-Bundle 'Shougo/unite.vim'
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-repeat'
-Bundle 'sjl/gundo.vim'
-Bundle 'ervandew/supertab'
-Bundle 'Yggdroot/indentLine'
-Bundle 'garbas/vim-snipmate'
-Bundle 'honza/vim-snippets'
-Bundle 'mattn/gist-vim'
+Plugin 'Shougo/unite.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-repeat'
+Plugin 'sjl/gundo.vim'
+Plugin 'ervandew/supertab'
+Plugin 'Yggdroot/indentLine'
+Plugin 'garbas/vim-snipmate'
+Plugin 'honza/vim-snippets'
+Plugin 'mattn/gist-vim'
 " thoughtbot/vim-rspec
 
 " Syntax highlighters and helpers:
-Bundle 'othree/javascript-libraries-syntax.vim'
-" Bundle 'jelera/vim-javascript-syntax'
-Bundle 'cakebaker/scss-syntax.vim'
-Bundle 'hail2u/vim-css3-syntax'
-Bundle 'wavded/vim-stylus'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'digitaltoad/vim-jade'
-Bundle 'MarcWeber/vim-addon-mw-utils'
-Bundle 'plasticboy/vim-markdown'
-Bundle 'shime/vim-livedown'
-" Bundle 'mxw/vim-jsx'
+Plugin 'xsbeats/vim-blade'
+Plugin 'othree/javascript-libraries-syntax.vim'
+" Plugin 'jelera/vim-javascript-syntax'
+Plugin 'cakebaker/scss-syntax.vim'
+Plugin 'hail2u/vim-css3-syntax'
+Plugin 'wavded/vim-stylus'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'digitaltoad/vim-jade'
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'shime/vim-livedown'
+Plugin 'evidens/vim-twig'
+" Plugin 'mxw/vim-jsx'
 
 " Clojure related:
-" Bundle 'tpope/vim-salve'
-" Bundle 'tpope/vim-fireplace'
-Bundle 'guns/vim-sexp'
-Bundle 'tpope/vim-sexp-mappings-for-regular-people'
-Bundle 'guns/vim-clojure-static'
-Bundle 'guns/vim-clojure-highlight'
-Bundle 'kien/rainbow_parentheses.vim'
+" Plugin 'tpope/vim-salve'
+" Plugin 'tpope/vim-fireplace'
+Plugin 'guns/vim-sexp'
+Plugin 'tpope/vim-sexp-mappings-for-regular-people'
+Plugin 'guns/vim-clojure-static'
+Plugin 'guns/vim-clojure-highlight'
+Plugin 'kien/rainbow_parentheses.vim'
 
 " Unused (?):
-" Bundle 'vim-scripts/paredit.vim'
-" Bundle 'tpope/vim-sleuth' " Detects indentation
+" Plugin 'vim-scripts/paredit.vim'
+" Plugin 'tpope/vim-sleuth' " Detects indentation
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
@@ -170,8 +174,10 @@ set ruler
 set nu
 set relativenumber
 
-" Don't allow selection of text using mouse
 set mouse=a
+" Stop middle click from pasting
+:map <MiddleMouse> <Nop>
+:map! <MiddleMouse> <Nop>
 
 " Height of the command bar
 set cmdheight=1
@@ -265,6 +271,10 @@ set sw=2
 
 " Set to 4 spaces
 nmap <leader>4 :set ts=4<cr>:set sw=4<cr>
+
+" Yank word under cursor : gotta be inside the word or else it yanks BEFORE the
+" word...
+map <leader>y bvey
 
 """"""""""""""""""""""""""""""
 " => Visual mode related

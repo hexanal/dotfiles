@@ -11,6 +11,7 @@ Bundle "tomtom/tlib_vim"
 " Must-have UI stuff
 Bundle 'scrooloose/nerdtree'
 Bundle 'bling/vim-airline'
+Plugin 'yosiat/oceanic-next-vim'
 
 " Tools
 Bundle 'Shougo/unite.vim'
@@ -36,6 +37,7 @@ Bundle 'digitaltoad/vim-jade'
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'plasticboy/vim-markdown'
 Bundle 'shime/vim-livedown'
+Plugin 'lambdatoast/elm.vim'
 " Bundle 'mxw/vim-jsx'
 
 " Clojure related:
@@ -169,6 +171,8 @@ set ruler
 
 set nu
 set relativenumber
+
+set noeb vb t_vb=
 
 " Don't allow selection of text using mouse
 set mouse=a

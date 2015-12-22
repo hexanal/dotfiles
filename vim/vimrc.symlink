@@ -70,13 +70,11 @@ let mapleader = ","
 let g:mapleader = ","
 
 if has('gui_running')
-  " set guifont=Droid\ Sans\ Mono\ for\ Powerline:h12
-  " set guifont=Ubuntu\ Mono\ derivative\ Powerline:h14
   set guifont=Source\ Code\ Pro\ for\ Powerline:h13
 endif
 
 " Show hidden characters
-set listchars=tab:>-,trail:·,extends:>,precedes:<
+set listchars=tab:·-,trail:·,extends:>,precedes:<
 set list
 
 " Display line at 80 characters
@@ -95,6 +93,9 @@ nmap <tab>t <C-W>T<cr>
 " Avoid syntax to slow your vim down with long lines
 set synmaxcol=256
 
+" WHADDUP!!! EJS
+au BufNewFile,BufRead *.ejs set filetype=html
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugin Related Stuff
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -104,6 +105,10 @@ map <Leader>f :NERDTreeFind<CR>
 
 " Open .vimrc file
 nmap <leader>v :tabe ~/.vimrc<cr>
+
+" Don't hide doublequotes in JSON files
+set conceallevel=0
+let g:vim_json_syntax_conceal = 0
 
 " Updates/Source this file
 map <silent> <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo '[.vimrc reloaded]'"<CR>
@@ -228,7 +233,7 @@ syntax enable
 " colorscheme gruvbox
 colorscheme base16-eighties
 set background=dark
-set t_Co=256
+" set t_Co=256
 
 " Set extra options when running in GUI mode
 if has("gui_running")

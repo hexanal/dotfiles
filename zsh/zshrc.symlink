@@ -96,10 +96,3 @@ alias editvimrc="mvim ~/.dotfiles/vim/vimrc.symlink"
 
 alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
 alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
-
-# Drupal Drush Aliases
-alias d="drush"
-alias dca="drush cc all"
-alias ppu="python proc update"
-alias prot="cd ~/Sites/protectron/"
-alias gotheme="cd sites/all/themes/tp1/"

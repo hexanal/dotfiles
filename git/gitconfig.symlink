@@ -12,7 +12,6 @@
         ai = add --interactive
         co = checkout
         cm = commit -m
-        cam = commit -a -m
         cA = commit --amend -m
         promote = !$ZSH/bin/git-promote
         wtf     = !$ZSH/bin/git-wtf

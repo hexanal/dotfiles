@@ -178,6 +178,7 @@ set ruler
 set nu
 set relativenumber
 
+" no error bells
 set noeb vb t_vb=
 
 " Don't allow selection of text using mouse
@@ -186,6 +187,9 @@ set mouse=a
 " Stop middle click from pasting
 :map <MiddleMouse> <Nop>
 :map! <MiddleMouse> <Nop>
+
+" Set conceallevel to none (don't hide quotes in json files)
+set conceallevel=0
 
 " Height of the command bar
 set cmdheight=1
@@ -219,10 +223,6 @@ set showmatch
 " How many tenths of a second to blink when matching brackets
 set mat=2
 
-" No annoying sound on errors
-set noerrorbells
-set novisualbell
-set t_vb=
 set tm=500
 
 " Enable syntax highlighting

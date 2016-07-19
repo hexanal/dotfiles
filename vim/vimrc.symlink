@@ -70,7 +70,8 @@ let mapleader = ","
 let g:mapleader = ","
 
 if has('gui_running')
-  set guifont=Source\ Code\ Pro\ for\ Powerline:h13
+  " set guifont=Source\ Code\ Pro\ for\ Powerline:h13
+  set guifont=Hasklig:h13
 endif
 
 " Show hidden characters
@@ -229,8 +230,8 @@ set tm=500
 syntax enable
 
 " COLORS!
-" colorscheme gruvbox
-colorscheme base16-eighties
+" colorscheme base16-eighties
+colorscheme duotone-dark
 set background=dark
 " set t_Co=256
 

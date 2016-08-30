@@ -6,13 +6,11 @@ call vundle#rc()
 
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'Shougo/vimproc.vim'
-" Plugin 'tomtom/tlib_vim'
 Plugin 'vim-scripts/tlib'
 
 " Must-have UI stuff
 Plugin 'scrooloose/nerdtree'
 Plugin 'bling/vim-airline'
-Plugin 'yosiat/oceanic-next-vim'
 
 " Tools
 Plugin 'Shougo/unite.vim'
@@ -22,9 +20,9 @@ Plugin 'tpope/vim-repeat'
 Plugin 'sjl/gundo.vim'
 Plugin 'ervandew/supertab'
 Plugin 'Yggdroot/indentLine'
-Plugin 'garbas/vim-snipmate'
-Plugin 'honza/vim-snippets'
-Plugin 'mattn/gist-vim'
+" Plugin 'garbas/vim-snipmate'
+" Plugin 'honza/vim-snippets'
+" Plugin 'mattn/gist-vim'
 " thoughtbot/vim-rspec
 
 " Syntax highlighters and helpers:
@@ -70,7 +68,8 @@ let mapleader = ","
 let g:mapleader = ","
 
 if has('gui_running')
-  set guifont=Source\ Code\ Pro\ for\ Powerline:h13
+  " set guifont=Source\ Code\ Pro\ for\ Powerline:h13
+  set guifont=Hasklig:h13
 endif
 
 " Show hidden characters
@@ -107,8 +106,12 @@ map <Leader>f :NERDTreeFind<CR>
 nmap <leader>v :tabe ~/.vimrc<cr>
 
 " Don't hide doublequotes in JSON files
-set conceallevel=0
+map <leader>cl :set conceallevel=0<cr>
+
+" useless?!
 let g:vim_json_syntax_conceal = 0
+
+let base16colorspace=256
 
 " Updates/Source this file
 map <silent> <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo '[.vimrc reloaded]'"<CR>
@@ -229,7 +232,6 @@ set tm=500
 syntax enable
 
 " COLORS!
-" colorscheme gruvbox
 colorscheme base16-eighties
 set background=dark
 " set t_Co=256
@@ -275,6 +277,8 @@ set si "Smart indent
 set nowrap "Wrap lines
 set ts=2
 set sw=2
+set tw=80
+set fo=croql
 
 " Set to 4 spaces
 nmap <leader>4 :set ts=4<cr>:set sw=4<cr>

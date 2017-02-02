@@ -29,6 +29,7 @@ Plugin 'Yggdroot/indentLine'
 Plugin 'lambdatoast/elm.vim'
 Plugin 'xsbeats/vim-blade'
 Plugin 'othree/javascript-libraries-syntax.vim'
+Plugin 'isRuslan/vim-es6'
 Plugin 'cakebaker/scss-syntax.vim'
 Plugin 'hail2u/vim-css3-syntax'
 Plugin 'wavded/vim-stylus'
@@ -69,7 +70,8 @@ let g:mapleader = ","
 
 if has('gui_running')
   " set guifont=Source\ Code\ Pro\ for\ Powerline:h13
-  set guifont=Hasklig:h13
+  " set guifont=Hasklig:h13
+  set guifont=Fira\ Code:h14
 endif
 
 " Show hidden characters

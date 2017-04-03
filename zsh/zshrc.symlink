@@ -70,7 +70,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH=/usr/local:/usr/local/rvm/gems/ruby-2.1.0/bin:/usr/local/rvm/gems/ruby-2.1.0@global/bin:/usr/local/rvm/rubies/ruby-2.1.0/bin:~/.composer/vendor/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/rvm/bin:$PATH
+export PATH=/usr/local:/usr/local/rvm/gems/ruby-2.1.0/bin:/usr/local/rvm/gems/ruby-2.1.0@global/bin:/usr/local/rvm/rubies/ruby-2.1.0/bin:~/.composer/vendor/bin:/usr/local/bin:/usr/bin:/bin:~/bin:./node_modules/.bin:/usr/sbin:/sbin:/usr/local/rvm/bin:$PATH
 
 SE16_SHELL="$HOME/.config/base16-shell/scripts/base16-eighties-dark.sh"
 [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
@@ -99,10 +99,9 @@ alias pwdc="pwd | pbcopy"
 alias gti="echo 'vroom vroom';git"
 alias logs="cd /var/log/apache2"
 alias edithosts="sudo -H vim /etc/hosts"
-alias editvimrc="mvim ~/.dotfiles/vim/vimrc.symlink"
-alias weather="curl -4 wttr.in/Montreal"
+alias editvimrc="mvim ~/.vimrc"
+alias weather="curl -4 wttr.in/Sydney"
+alias grunty="grunt clean && grunt --force && grunt watcher"
 
 alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
 alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
-
-alias pastq="cd ~/Sites/pasteque/chapitres/"

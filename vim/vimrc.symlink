@@ -12,6 +12,7 @@ Plugin 'vim-syntastic/syntastic'
 " Must-have UI stuff
 Plugin 'scrooloose/nerdtree'
 Plugin 'bling/vim-airline'
+Plugin 'joshdick/onedark.vim'
 
 " Tools
 Plugin 'ctrlpvim/ctrlp.vim'
@@ -28,20 +29,22 @@ Plugin 'Yggdroot/indentLine'
 " Plugin 'thoughtbot/vim-rspec'
 
 " Syntax highlighters and helpers:
+Plugin 'sheerun/vim-polyglot'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'gcorne/vim-sass-lint'
-Plugin 'lambdatoast/elm.vim'
-Plugin 'xsbeats/vim-blade'
-Plugin 'othree/javascript-libraries-syntax.vim'
-Plugin 'isRuslan/vim-es6'
-Plugin 'cakebaker/scss-syntax.vim'
-Plugin 'hail2u/vim-css3-syntax'
-Plugin 'wavded/vim-stylus'
-Plugin 'digitaltoad/vim-jade'
-Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'plasticboy/vim-markdown'
 Plugin 'shime/vim-livedown'
-Plugin 'evidens/vim-twig'
+" Plugin 'lambdatoast/elm.vim'
+" Plugin 'xsbeats/vim-blade'
+" Plugin 'othree/javascript-libraries-syntax.vim'
+" Plugin 'isRuslan/vim-es6'
+" Plugin 'cakebaker/scss-syntax.vim'
+" Plugin 'hail2u/vim-css3-syntax'
+" Plugin 'wavded/vim-stylus'
+" Plugin 'digitaltoad/vim-jade'
+" Plugin 'MarcWeber/vim-addon-mw-utils'
+" Plugin 'plasticboy/vim-markdown'
+" Plugin 'evidens/vim-twig'
+" Plugin 'leafgarland/typescript-vim'
 " Plugin 'kchmck/vim-coffee-script'
 
 " Clojure related:
@@ -156,6 +159,7 @@ let g:ctrlp_custom_ignore = {
 
 " Powerline Fonts for Airline
 let g:airline_powerline_fonts = 1
+let g:airline_theme='onedark'
 
 " Pull up Gundo Interface
 nmap <leader>gg :GundoToggle<cr>
@@ -260,7 +264,8 @@ set tm=500
 syntax enable
 
 " COLORS!
-colorscheme base16-eighties
+" colorscheme base16-eighties
+colorscheme onedark
 set background=dark
 " set t_Co=256
 

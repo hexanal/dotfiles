@@ -7,16 +7,17 @@
         name = hexanal
         email = frederic.mercy@gmail.com
 [credential]
-      helper = cache --timeout=25000
+        helper = osxkeychain
 [alias]
         ai = add --interactive
         co = checkout
         cm = commit -m
         cA = commit --amend -m
-        promote = !$ZSH/bin/git-promote
-        wtf     = !$ZSH/bin/git-wtf
-        rank-contributors = !$ZSH/bin/git-rank-contributors
+        promote = !$DOTFILES/bin/git-promote
+        wtf     = !$DOTFILES/bin/git-wtf
+        rank-contributors = !$DOTFILES/bin/git-rank-contributors
         count   = !git shortlog -sn
+
 [color]
         diff = auto
         status = auto
@@ -32,8 +33,4 @@
 [difftool]
         prompt = false
 [push]
-        # See `git help config` (search for push.default)
-        # for more information on different options of the below setting.
-        #
-        # Setting to git 2.0 default to surpress warning message
         default = simple

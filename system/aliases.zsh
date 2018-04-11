@@ -8,3 +8,13 @@ then
   alias ll="gls -l --color"
   alias la='gls -A --color'
 fi
+
+alias hg="history | grep"
+alias pwdc="pwd | pbcopy"
+alias logs="cd /var/log/apache2"
+alias edithosts="sudo -H vim /etc/hosts"
+alias editvimrc="mvim ~/.vimrc"
+alias weather="curl -4 wttr.in/Sydney"
+
+alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
+alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"

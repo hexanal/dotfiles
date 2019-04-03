@@ -18,3 +18,11 @@ alias weather="curl -4 wttr.in/Sydney"
 
 alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
 alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
+
+function sendto() {
+	echo Copying file "${2}" to /fredmercy/files/"${1}"
+	echo Link will be: [ http://fredmercy.com/files/"${1}"/"${2}" ]
+
+	scp "${2}" fredmercy.com:~/fredmercy/files/"${1}"
+}
+

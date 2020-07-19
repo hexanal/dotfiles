@@ -1,23 +1,15 @@
-# Sample gitconfig
-#
-
 [hub]
         protocol = https
 [user]
         name = hexanal
-        email = frederic.mercy@gmail.com
+        email = yo@fredmercy.com
 [credential]
-        helper = osxkeychain
+        helper = GIT_CREDENTIAL_HELPER
 [alias]
         ai = add --interactive
-        co = checkout
-        cm = commit -m
         cA = commit --amend -m
-        promote = !$DOTFILES/bin/git-promote
-        wtf     = !$DOTFILES/bin/git-wtf
-        rank-contributors = !$DOTFILES/bin/git-rank-contributors
-        count   = !git shortlog -sn
-
+        cm = commit -m
+        co = checkout
 [color]
         diff = auto
         status = auto

@@ -1,3 +1,2 @@
-# my dotfiles, forked from "holman does dotfiles"
+# .dotfiles
 
-At last, my dotfiles on GitHub, pfew!

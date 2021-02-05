@@ -8,6 +8,7 @@ call plug#begin()
   Plug 'tpope/vim-commentary'
   Plug 'sjl/gundo.vim'
   Plug 'sheerun/vim-polyglot'
+  Plug 'reedes/vim-pencil'
   Plug 'ParamagicDev/vim-medic_chalk'
   Plug 'reedes/vim-pencil'
 

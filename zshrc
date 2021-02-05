@@ -21,6 +21,7 @@ alias la="ls -a"
 alias hg="history | grep"
 alias pwdc="pwd | pbcopy"
 alias edithosts="sudo vim /etc/hosts"
+alias editvhosts="sudo vim /usr/local/etc/httpd/extra/httpd-vhosts.conf"
 alias editvimrc="mvim ~/.vimrc"
 alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pasteboard.'"
 
@@ -47,3 +48,8 @@ SE16_SHELL="$HOME/.config/base16-shell/scripts/base16-eighties-dark.sh"
 [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
 
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export PATH="/usr/local/opt/php@7.3/bin:$PATH"
+export PATH="/usr/local/opt/php@7.3/sbin:$PATH"
+
+export DRUSH_LAUNCHER_FALLBACK=~/.drush/bin/drush8
+

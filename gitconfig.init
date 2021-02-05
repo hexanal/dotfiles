@@ -1,8 +1,8 @@
 [hub]
         protocol = https
 [user]
-        name = hexanal
-        email = yo@fredmercy.com
+        name = MY_DUMB_NAME
+        email = MY_STUPID_EMAIL
 [credential]
         helper = GIT_CREDENTIAL_HELPER
 [alias]

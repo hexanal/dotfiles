@@ -1,0 +1,118 @@
+{
+    "editor.fontFamily": "Fantasque Sans Mono, JuliaMono, Fira Code, Cascadia Mono PL, Menlo, Monaco, 'Courier New', monospace",
+    "window.zoomLevel": 0,
+    "editor.fontSize": 18,
+    "editor.fontLigatures": true,
+    "editor.renderWhitespace": "boundary",
+    "editor.tabSize": 2,
+    "editor.detectIndentation": true,
+    "editor.tabCompletion": "on",
+    "editor.quickSuggestions": false,
+    "editor.lineNumbers": "relative",
+    "editor.insertSpaces": true,
+    "editor.rulers": [
+      80
+    ],
+    "editor.colorDecorators": false,
+    "typescript.referencesCodeLens.enabled": false,
+    "files.trimTrailingWhitespace": true,
+    "workbench.iconTheme": "vs-seti",
+    "workbench.startupEditor": "newUntitledFile",
+    "javascript.suggest.autoImports": false,
+    "editor.quickSuggestionsDelay": 100,
+    "html.format.enable": false,
+    "html.format.preserveNewLines": false,
+    "html.autoClosingTags": false,
+    "editor.autoClosingBrackets": "never",
+    "editor.autoClosingQuotes": "never",
+    "editor.autoClosingOvertype": "never",
+    "workbench.editor.tabCloseButton": "off",
+    "workbench.editor.closeOnFileDelete": true,
+    "gitlens.advanced.telemetry.enabled": false,
+    "gitlens.blame.heatmap.enabled": false,
+    "gitlens.blame.highlight.enabled": false,
+    "git.suggestSmartCommit": false,
+    "git.showInlineOpenFileAction": false,
+    "gitlens.codeLens.authors.enabled": false,
+    "todohighlight.isCaseSensitive": false,
+    "workbench.editor.highlightModifiedTabs": true,
+    "editor.selectionHighlight": false,
+    "editor.occurrencesHighlight": false,
+    "gitlens.advanced.blame.delayAfterEdit": 0,
+    "gitlens.advanced.quickPick.closeOnFocusOut": false,
+    "gitlens.advanced.repositorySearchDepth": 20,
+    "gitlens.codeLens.recentChange.enabled": false,
+    "gitlens.hovers.annotations.details": false,
+    "gitlens.hovers.currentLine.details": false,
+    "gitlens.hovers.currentLine.enabled": false,
+    "gitlens.hovers.currentLine.changes": false,
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "references.preferredLocation": "view",
+    "editor.cursorStyle": "block",
+    "editor.minimap.renderCharacters": false,
+    "editor.minimap.scale": 1,
+    "javascript-repl.coverage": false,
+    "javascript-repl.explorerFocus": false,
+    "better-comments.tags": [
+        {
+          "tag": "!",
+          "color": "#FF2D00",
+          "strikethrough": false,
+          "backgroundColor": "transparent"
+        },
+        {
+          "tag": "?",
+          "color": "#3498DB",
+          "strikethrough": false,
+          "backgroundColor": "transparent"
+        },
+        {
+          "tag": "#",
+          "color": "#FF7C98",
+          "backgroundColor": "transparent"
+        },
+        {
+          "tag": "note",
+          "color": "#5454B8",
+          "backgroundColor": "transparent"
+        },
+        {
+          "tag": "[x]",
+          "color": "#5D5C64",
+          "backgroundColor": "transparent"
+        },
+        {
+          "tag": "//",
+          "color": "#474747",
+          "strikethrough": true,
+          "backgroundColor": "transparent"
+        },
+        {
+          "tag": "todo",
+          "color": "#FF8C00",
+          "strikethrough": false,
+          "backgroundColor": "transparent"
+        },
+        {
+          "tag": "fixme",
+          "color": "#FF2300",
+          "strikethrough": false,
+          "backgroundColor": "transparent"
+        },
+        {
+          "tag": "*",
+          "color": "#98C379",
+          "strikethrough": false,
+          "backgroundColor": "transparent"
+        }
+    ],
+    "vim.easymotion": true,
+    "vim.leader": ",",
+    "vim.cursorStylePerMode.insert": "underline",
+    "todo-tree.tree.showScanodeButton": false,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "workbench.colorTheme": "One Dark Pro",
+    "workbench.fontAliasing": "antialiased"
+}

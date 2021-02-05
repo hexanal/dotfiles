@@ -10,13 +10,17 @@ ZSH_THEME="typewritten"
 
 plugins=(git)
 
-
 # aliazis
+alias blog=/Users/fredmercy/Sites/fredmercy/blog/
+
+alias mysql=/usr/local/mysql/bin/mysql
+alias mysqladmin=/usr/local/mysql/bin/mysqladmin
+
 alias l="ls"
 alias la="ls -a"
 alias hg="history | grep"
 alias pwdc="pwd | pbcopy"
-alias edithosts="sudo -H vim /etc/hosts"
+alias edithosts="sudo vim /etc/hosts"
 alias editvimrc="mvim ~/.vimrc"
 alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pasteboard.'"
 
@@ -36,14 +40,6 @@ alias gst='git status'
 alias gai='git add --interactive'
 alias gcam='git commit --amend -C HEAD'
 alias gti="echo 'vroom vroom';git"
-
-
-# funx
-function upload() {
-  echo Copying file "${2}" to /fredmercy/files/"${1}"
-  echo Link will be: [ http://fredmercy.com/files/"${1}"/"${2}" ]
-  scp "${2}" fredmercy.com:~/fredmercy/files/"${1}"
-}
 
 source $ZSH/oh-my-zsh.sh
 

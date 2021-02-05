@@ -9,12 +9,12 @@ call plug#begin()
   Plug 'sjl/gundo.vim'
   Plug 'sheerun/vim-polyglot'
   Plug 'ParamagicDev/vim-medic_chalk'
+  Plug 'reedes/vim-pencil'
 
   " syntax highlighting
   Plug 'pangloss/vim-javascript'
 
   " colorschemes
-  Plug 'nanotech/jellybeans.vim'
   Plug 'mhartington/oceanic-next'
 
   " to try later
